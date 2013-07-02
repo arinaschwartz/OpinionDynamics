@@ -1,0 +1,67 @@
+CS121 A'11
+HW1: Opinion Dynamics
+
+Anne Rogers
+Sept 2011
+
+Here are some things to think about when writing your solution.
+
+Have you put your name(s) at the top of the file Opinion.java?
+
+update function: Does your code
+
+  * compute the lead and partner correctly for both
+    interior and boundary elements (that is, 0 & n-1),
+
+  * handle the case where the lead and partner have different opinions
+    properly, and
+
+  * choose the voter to update when the lead and partner have the same 
+    opinion properly?
+
+doStep function: Does your code
+
+  * make N calls to update and
+
+  * randomly choose the element to update?
+
+
+hasConverged: Does your code 
+
+  * handle the case where all the elements are the same properly,
+
+  * handle the case where the elements are not all the same properly, and
+
+  * handle the boundary cases where element 0 (or element n-1) is different
+    from the rest of the elements?
+
+
+doOneSimulation: Does your code
+
+  * stop making calls to doStep once the voters have converged on an opinion and
+ 
+  * does it stop making calls to doStep after MAX_STEP steps,
+
+  * return the number of steps executed, and
+
+  * complete at least one step?
+
+
+estimateExitProbability: Does your code
+
+  * generate a new set of voters for each trial,
+
+  * test whether a given trial converged to A properly, and
+
+  * compute the return percentage of successful trials properly?
+    (Recall that you will want to use floating point (double) division
+    rather than integer division)
+
+
+
+  
+  
+
+
+
+
